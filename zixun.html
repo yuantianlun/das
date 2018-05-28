@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="zixun.css">
+</head>
+<body>
+<div class="contact-block toggle" style="bottom: 0px;">
+    <div class="contact-toggle off"></div>
+    <div class="center clearfix">
+        <div class="contact-item first online-chat">
+            <div class="contact-top">
+                <span class="contact-title">立即咨询</span>
+            </div>
+            <div class="chat">
+                <a class="shangqiao a_baidu_window zixun_count" zixun="bd" href="http://p.qiao.baidu.com/cps/chatIndex?reqParam=%7B%22from%22%3A1%2C%22sessionid%22%3A%22-100%22%2C%22siteId%22%3A%2211049317%22%2C%22tid%22%3A%22-1%22%2C%22userId%22%3A%2222490479%22%2C%22ttype%22%3A1%2C%22pageId%22%3A0%7D" target="_blank"></a>
+                <a class="qq a_new_window zixun_count" zixun="qq" href="http://q.url.cn/CDUdBx?_type=wpa&amp;qidian=true" target="_blank"></a>
+            </div>
+        </div>
+        <div class="contact-item">
+            <div id="botttom_form" style="">
+                <div class="contact-top">
+                    <span class="contact-title">我们联系您</span>
+                </div>
+                <form action="/customer/feedback?is_ajax=1" method="post" id="submitform" name="submitform">
+                    <input type="hidden" name="is_pop" value="1">
+                    <input type="hidden" name="baiduSource" value="INTENTION_SOURCE_300_FORM01">
+                    <div class="contact-form">
+                        <input type="tel" value="" class="phoneNumber" name="mobile" id="mobile" required="required" placeholder="输入手机号">
+                        <input type="text" id="verify" name="verify" class="verify verifyInput" required="required" placeholder="验证码">
+                        <a id="verify_mes" style="display: inline-block; vertical-align: middle;" href="javascript:void(0);">
+                            <img style="height: 30px; width:73px; display: block;" src="/verify/verify?1527475892086" class="verify_image" data-act="1" alt="">
+                        </a>
+                        <button type="button" class="submit zixunsubmit">提&nbsp;&nbsp;交</button>
+                    </div>
+                </form>
+            </div>
+            <div id="botttom_callback" style="display: none;">
+                <div class="contact-top">
+                    <span class="contact-title">我们联系您</span>
+                </div>
+                <div class="contact-form callback">
+                    <input type="tel" value="" class="phoneNumber" name="mobile" id="mycall" required="required" placeholder="输入手机号">
+                    <button type="button" class="submit baidu_call">免费回拨</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="contact-item contact-qr-block clearfix">
+            <div class="contact-left clearfix">
+                <p class="contact-title">24小时热线</p>
+                <p class="contact-phone">400-660-5555</p>
+            </div>
+            <div class="contact-qr">
+                <img src="http://s.300.cn/v2.0/home/images/img-qr.png" alt="img">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
