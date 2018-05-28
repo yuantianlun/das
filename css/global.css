@@ -2123,6 +2123,7 @@ i {
     font-size: 30px;
     position: relative;
     line-height: 26px;
+    text-align: left;
 }
 
 .vision-top img {
