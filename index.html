@@ -17,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/global.css" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="common.css">
     <!--[if lt IE 7]>
     <link rel="stylesheet" type="text/css" href="css/ie6.css" media="screen, projection" />
     <![endif]-->
@@ -34,9 +35,7 @@
     <script type="text/javascript" src="js/jquery.mobile-events.min.js"></script>
     <script type="text/javascript" src="js/respond.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    <style>
 
-    </style>
 </head>
 <body class="action--site-index controller--site">
 <div class="wrapper">
@@ -174,38 +173,6 @@
                 </div>
             </div>
 
-            <!--<div class="box-left">-->
-                <!--<div class="item bt-menu js-nav-main" data-menu-id="menu-main">-->
-                    <!--<div class="ico-menu">-->
-                        <!--<div class="bar"></div>-->
-                        <!--<div class="bar"></div>-->
-                        <!--<div class="bar"></div>-->
-                    <!--</div>-->
-                    <!--<span>MENU</span>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="box-right">-->
-                <!--<div class="item bt-search " id="js-search-container">-->
-
-                <!--</div>-->
-                <!--<div class="item login">-->
-                    <!--<strong>-->
-                        <!--021-65351458-->
-                    <!--</strong>-->
-
-                <!--</div>-->
-
-                <!--<div class="item" id="bt-submit">-->
-                    <!--<a href="/site/contact" class="button button-large">-->
-                        <!--<span>联系我们</span>-->
-                    <!--</a>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="logo-header">-->
-                <!--<a href="/">-->
-                    <!--<img src="images/logo.png"/>-->
-                <!--</a>-->
-            <!--</div>-->
 
 
 
@@ -409,8 +376,6 @@
                             </div>
 
                         </li>
-
-
 
                         <li>
                             <div class="li-bottom">
@@ -777,6 +742,76 @@
                         <!-- el end -->
                     </div>
                     <!-- cont inner end -->
+                </div>
+            </div>
+            <div class="zx_pop active_pop">
+                <div class="mask-body"></div>
+                <div class="active_pop_body">
+                    <div class="apply-con">
+                        <a href="javascript:void(0);" class="close"></a>
+                        <div class="apply-top">
+                            <div class="title">免费咨询</div>
+                            <div class="subtitle">欢迎您免费咨询，请填写以下信息，我们收到后会尽快与您联系</div>
+                        </div>
+                        <div class="form">
+                            <form action="/customer/feedback?is_ajax=1" method="post" id="submitform" name="submitform">
+                                <input type="hidden" name="is_pop" value="1">
+                                <input type="hidden" name="baiduSource" value="INTENTION_SOURCE_300_FORM01">
+                                <div class="textfile">
+                                    <span class="t">公司名称</span>
+                                    <input type="text" name="company" id="company">
+                                </div>
+                                <!-- <div class="textfile wherecity wrap">
+                                    <span class="t">所在城市</span>
+                                    <div class="nice-select marginr gpp" name="nice-select">
+                                        <input type="text" class="gp" value="请选择省份" readonly="" name="province" id="gp">
+                                        <ul class="province">
+
+                                        </ul>
+                                    </div>
+                                    <div class="nice-select marginr gtt" name="nice-select">
+                                        <input type="text" class="gt" value="请选择城市" readonly=""  name="city" id="gt">
+                                        <ul class="city">
+
+                                        </ul>
+                                    </div>
+                                    <div class="nice-select gdd" name="nice-select">
+                                        <input type="text" class="gd" value="请选择区/县" readonly=""  name="district" id="gd">
+                                        <ul class="district">
+
+                                        </ul>
+                                    </div>
+                                </div> -->
+                                <div class="textfile">
+                                    <span class="t"><i class="red mr5">*</i>手机号码</span>
+                                    <input type="text" name="mobile" id="mycall">
+                                </div>
+                                <!--  -->
+                                <div class="textfile lxman">
+                                    <span class="t">联系人</span>
+                                    <input type="text" name="truename" id="name">
+                                    <!-- <div class="appellation">
+                                        <input type="radio" name="sex" checked="checked" value="先生"><span>先生</span>
+                                        <input type="radio" name="sex" value="女士"><span>女士</span>
+                                    </div> -->
+                                </div>
+                                <!-- <div class="textfile">
+                                    <span class="t">邮箱地址</span>
+                                    <input type="text" name="email" id="email"/>
+                                </div> -->
+                                <div class="textfile">
+                                    <span class="t" style="display: inline; vertical-align: middle;"><i class="red mr5">*</i>验证码</span>
+                                    <input style="width: 258px; display: inline-block; vertical-align: middle;" type="text" id="verify" name="verify" class="verifyInput">
+                                    <a style="display: inline-block; vertical-align: middle; margin: 0 0 0 20px" href="javascript:void(0);">
+                                        <img style="width: 100px;" src="http://s.300.cn/v2.0/home/images/yzm_null.jpg" class="verify_image" alt="">
+                                    </a>
+                                </div>
+                                <div class="textfile align-center">
+                                    <a href="javascript:void(0);" class="submit zixunsubmit">提交</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
