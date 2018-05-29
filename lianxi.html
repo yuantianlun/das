@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv=X-UA-Compatible content="IE=edge">
@@ -9,30 +8,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name='keywords' content='' />
     <meta name='description' content=''/>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+    <!--<script src="js/map.js"></script>-->
     <link rel="stylesheet" href="css/kuangjia.css">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" type="text/css" href="css/default.css"/>
-    <link rel="stylesheet" type="text/css" href="css/flexslider.css" />
-    <link rel="stylesheet" type="text/css" href="css/video-js.css" />
+    <!--<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />-->
+    <!--<link rel="stylesheet" type="text/css" href="css/default.css"/>-->
+    <!--<link rel="stylesheet" type="text/css" href="css/flexslider.css" />-->
+    <!--<link rel="stylesheet" type="text/css" href="css/video-js.css" />-->
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/global.css" />
     <!--[if lt IE 7]>
-    <link rel="stylesheet" type="text/css" href="css/ie6.css" media="screen, projection" />
+    <!--<link rel="stylesheet" type="text/css" href="css/ie6.css" media="screen, projection" />-->
     <![endif]-->
     <!--[if lt IE 8]>
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-    <link rel="stylesheet" type="text/css" href="css/ie.css" media="screen, projection" />
+    <!--<link rel="stylesheet" type="text/css" href="css/ie.css" media="screen, projection" />-->
     <![endif]-->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <!--<script type="text/javascript" src="js/jquery.min.js"></script>-->
+    <!--<script type="text/javascript" src="js/jquery-ui.min.js"></script>-->
     <title>
         联系我们
     </title>
-    <script type="text/javascript" src="js/jquery.carouFredSel.js"></script>
-    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
-    <script type="text/javascript" src="js/jquery.mobile-events.min.js"></script>
-    <script type="text/javascript" src="js/respond.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <!--<script type="text/javascript" src="js/jquery.carouFredSel.js"></script>-->
+    <!--<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>-->
+    <!--<script type="text/javascript" src="js/jquery.mobile-events.min.js"></script>-->
+    <!--<script type="text/javascript" src="js/respond.js"></script>-->
+    <!--<script type="text/javascript" src="js/main.js"></script>-->
 
 </head>
 
@@ -289,39 +290,6 @@
                 </div>
             </div>
 
-            <!-- <div class="box-left">
-                <div class="item bt-menu js-nav-main" data-menu-id="menu-main">
-                    <div class="ico-menu">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                    </div>
-                    <span>MENU</span>
-                </div>
-            </div> -->
-            <!-- <div class="box-right">
-                <div class="item bt-search " id="js-search-container">
-
-                </div>
-                <div class="item login">
-                    <strong>
-                        021-65351458
-                    </strong>
-
-                </div>
-
-                <div class="item" id="bt-submit">
-                    <a href="/site/contact" class="button button-large">
-                        <span>联系我们</span>
-                    </a>
-                </div>
-            </div> -->
-            <!-- <div class="logo-header">
-                <a href="/">
-                    <img src="/themes/basic/skin/images/logo.png"/>
-                </a>
-            </div> -->
-
 
 
         </div>
@@ -346,7 +314,11 @@
                         <p>Contact us</p>
                     </div>
                     <div style="width:100%;height:70%;">
-                        <div class="map_box col-lg-6 col-ma-6 col-sm-12 col-xs-12" style="min-height: 450px;float: left;position: relative;">
+                        <div class="map_box col-lg-6 col-ma-6 col-sm-12 col-xs-12" style="min-height: 400px;float: left;position: relative;height: 400px;">
+                            <div style="width:80%;height:70%;border:#ccc solid 1px; margin-top: 45px;">
+                                <iframe src="ce1.html" frameborder="0" style="width: 100%; height: 100%;"></iframe>
+                            </div>
+
 
                         </div>
                         <div class="iup col-lg-6 col-ma-6 col-sm-12 col-xs-12" style="height:450px;float: right;position: relative; font-size: 0.16rem">
@@ -508,53 +480,47 @@
 
     <div id="casePopup"></div>
 </div>
-<script src="js/map.js"></script>
 
-<script>
-    $(function(){
-        $("body").on("click", ".header-main .box-left", function () {
-            $("body").addClass("nav-sidebar-open");
-        });
-        $("body").on("click", ".nav-main .bt-close", function () {
-            $("body").removeClass("nav-sidebar-open");
-        });
-        $(".float-right-box").hover(function(){
-            $(this).removeClass("on");
-        },function(){
-            $(this).addClass("on");
-        });
-        $(".gotop").click(function (e) {
-            e.preventDefault();
-            $('html,body').animate({'scrollTop': '0px'}, 1000);
-        });
-    });
-
-
-
-</script>
-<!-- <script>
-    $(function() {
-        $("body").on("click", ".case_list li,.case_list li", function(e) {
-            e.preventDefault();
-            var url=$(this).data("url");
-            $("#casePopup").load(url,function(){
-                $("#feature").css({height: '100%', display: 'block', opacity: '1'});
-                $("#feature").animate({left: '50%', marginLeft: '0px'});
-                $(".fea_mask").css({display: 'block'});
-                $(".fea_close").addClass("active");
-            });
-        });
-
-
-        $("body").on("click", ".fea_close,.fea_mask", function() {
-            $("#feature").animate({left: '100%', marginLeft: '120px'});
-            $("#feature").eq(300).css({height: '100%', display: 'none', opacity: '0'});
-            $(".fea_mask").css({display: 'none'});
-            $(".fea_close").removeClass("active");
-            $("#casePopup").html('');
-        });
-    });
-</script> -->
 </body>
 
 </html>
+<script>
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+    }
+
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(120.545775,31.264806);//定义一个中心点坐标
+        map.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+        var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+        map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+        var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+        map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+        var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+        map.addControl(ctrl_sca);
+    }
+
+
+    initMap();//创建和初始化地图
+</script>
